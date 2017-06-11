@@ -12,9 +12,6 @@ div.vectorTabs {
 	/* @noflip */
 	float: left;
 	height: 2.5em;
-	.background-image('images/tab-break.png');
-	background-position: bottom left;
-	background-repeat: no-repeat;
 	padding-left: 1px;
 
 	ul {
@@ -25,9 +22,6 @@ div.vectorTabs {
 		list-style-image: none;
 		margin: 0;
 		padding: 0;
-		.background-image('images/tab-break.png');
-		background-position: right bottom;
-		background-repeat: no-repeat;
 
 		li {
 			/* @noflip */
@@ -38,10 +32,6 @@ div.vectorTabs {
 			height: 100%;
 			margin: 0;
 			padding: 0;
-			background-color: #f3f3f3;
-			.background-image('images/tab-normal-fade.png');
-			background-position: bottom left;
-			background-repeat: repeat-x;
 			white-space: nowrap;
 		}
 
@@ -60,10 +50,8 @@ div.vectorTabs {
 		}
 
 		&.selected {
-			.background-image('images/tab-current-fade.png');
 			a,
 			a:visited {
-				color: #222;
 				text-decoration: none;
 			}
 		}
@@ -94,7 +82,6 @@ div.vectorTabs {
 
 	span {
 		display: inline-block;
-		.background-image('images/tab-break.png');
 		background-position: bottom right;
 		background-repeat: no-repeat;
 		height: 100%;
@@ -132,9 +119,6 @@ body.rtl div.vectorMenu {
 div#mw-head div.vectorMenu h3 {
 	/* @noflip */
 	float: left;
-	.background-image('images/tab-break.png');
-	background-repeat: no-repeat;
-	background-position: bottom right;
 	font-size: 1em;
 	height: 2.5em;
 	// This effectively moves the "background border" outside of the element to act like a real

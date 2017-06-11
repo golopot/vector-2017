@@ -23,9 +23,17 @@ body {
 	font-family: @content-font-family;
 }
 body {
-	background-color: @menu-background-color;
+	background-color: #ffffff;
 }
 
+#body-left{
+	position: absolute;
+}
+#body-right{
+	margin-left: 176px;
+	border-left: 1px solid #cacaca;
+	min-height: 100%;
+}
 /* Content */
 .mw-body,
 .parsoid-body {
@@ -36,12 +44,8 @@ body {
 }
 
 .mw-body {
-	margin-left: 10em;
-	/* Border on top, left, and bottom side */
-	border: 1px solid @content-border-color;
-	border-right-width: 0;
-	/* Merge the border with tabs' one (in their background image) */
-	margin-top: -1px;
+	border-top: 1px solid #cacaca;
+	padding: 1.25em 1.5em 1.5em 1.5em;
 
 	// h1's can exist outside of mw-body-content so some heading styles
 	// need to be defined in mw-body as well
@@ -70,6 +74,7 @@ body {
 	.firstHeading {
 		/* Change the default from mediawiki.skinning CSS to let indicators float into heading area */
 		overflow: visible;
+		border-bottom: 0px;
 	}
 
 	.mw-indicators {
